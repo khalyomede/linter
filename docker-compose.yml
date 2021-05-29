@@ -1,0 +1,17 @@
+version: "3"
+services:
+  v:
+    build: ./docker/v
+    entrypoint: v
+    volumes:
+      - .:/home/alpine
+      - ./docker-data/v/root/.vmodules:/root/.vmodules
+    working_dir: /home/alpine
+
+  app:
+    build: ./docker/v
+    tty: true
+    volumes:
+      - .:/home/alpine
+      - ./docker-data/v/root/.vmodules:/root/.vmodules
+    working_dir: /home/alpine

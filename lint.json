@@ -1,0 +1,8 @@
+{
+    "folders": [
+        "misc/folder"
+    ],
+    "rules": {
+        "end_new_line": true
+    }
+}
